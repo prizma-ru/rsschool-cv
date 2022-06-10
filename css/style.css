@@ -1,0 +1,58 @@
+/*### Primary*/
+
+:root {
+    --bg-dark: #000000;
+    --dark-red: #710707;
+    --color-gold: #bdae82;
+    --color-white: #ffffff;
+    --font1: 40px;
+    --font2: 32px;
+}
+
+/*Обнуление*/
+*, *:before, *:after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    /* color: var(--font-white); */
+    /* color: var(--color-white); */
+    box-sizing: border-box;
+
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-white);
+    display: block;
+    transition: 0.5s;
+}
+
+a:hover {
+    color: var(--color-gold);
+}
+
+svg:not([fill]):not([stroke]) {
+    /* теперь вообще не нужно стилизовать SVG и каждый раз прописывать свойство border-color */
+    fill: currentColor;
+}
+
+/*Обнуление*/
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    background-color: var(--bg-dark);
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: normal;
+    color: var(--color-white);
+    position: relative;
+
+}
