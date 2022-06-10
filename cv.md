@@ -34,7 +34,7 @@ I don't have enough experience in Front-End Development at the moment.
 
 > HTML Academy;
 
-> https://rs.school/
+> rs.school Stage 0
 
 ## English level
 > A1
