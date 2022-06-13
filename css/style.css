@@ -56,3 +56,64 @@ body {
     position: relative;
 
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 1120px;
+    /*ширина блока*/
+    max-width: 100%;
+    /*максимальный размер 1440пх*/
+    margin: 0 auto;
+    /*выровниваем по центру*/
+}
+
+/*--------------------footer--------------------*/
+.footer {
+    background-color: #ffffff;
+    background-color: #1d1d24;
+    padding: 25px 0;
+}
+
+.social__icon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon__rsschool {
+    padding-right: 20px;
+}
+
+.icon__github {
+    padding-left: 20px;
+}
+
+.footer_social {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer_social ul {
+    display: flex;
+    align-items: center;
+}
+
+.footer_social ul li {
+    list-style-type: none;
+    margin: 0 10px;
+}
+
+.fab {
+    color: #ffffff;
+    font-size: 35px;
+}
+
+.fab:hover {
+    color: #2ac2c8;
+}
+
+/*--------------------footer--------------------*/
