@@ -1,11 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV#2. HTML, CSS Git Basics</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" />
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/an-old-hope.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+    <title>Resume-theme</title>
 </head>
+<header class="header">
+    <div class="container">
+        <div class="header__flex">
+            <nav class="header__nav">
+                <ul class="header__nav-element">
+                    <li><a href="#about-id" class="nav__link ">About Me</a></li>
+                    <li><a href="#skills-id" class="nav__link ">My Skills</a></li>
+                    <li><a href="#experience-id" class="nav__link ">Work Experience</a></li>
+                    <li><a href="#education-id" class="nav__link ">Education</a></li>
+                    <li><a href="#portfolio-id" class="nav__link ">Portfolio</a></li>
+                    <li><a href="#code-id" class="nav__link ">Code examples</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </div>
+</header>
+<main class="main">
+    <div class="container">
+        <div class="main__flex">
+            <article class="aboutme">
+                <div class="aboutme__photo">
+                    <img src="./img/photo.jpg" alt="me photo">
+                </div>
+                <h2 class="aboutme__title">Contact me</h2>
+                <div class="aboutme__card">
+                    <ul class="aboutme__param">
+                        <li>Name :</li>
+                        <li>Age :</li>
+                        <li>Email :</li>
+                        <li>Phone :</li>
+                        <li>Address :</li>
+                        <li>Web :</li>
+                        <li>Sample code:</li>
+                    </ul>
+                    <ul class="aboutme__param">
+                        <li>Dmitry Glotov</li>
+                        <li>43 Years</li>
+                        <li>dmitry.glotov@gmail.com</li>
+                        <li>+7 985 XXX XX XX</li>
+                        <li>Moscow, Russia</li>
+                        <li><a href="https://www.linkedin.com/in/dmitryglotov" target="_blank">linkedin</a></li>
+                        <li><a href="https://github.com/prizma-ru" target="_blank">GitHub</a></li>
+                    </ul>
+                </div>
+            </article>
+            <section class="experience">
+                <article class="experience__aboutme">
+                    <h1 class="header__title">Dmitry Glotov</h1>
+                    <p class="header__text">#Junior Frontend Developer</p>
+                    <h2 class="aboutme__title">About Me</h2>
+                    <p class="aboutme__text">I want to study Frontend development to expand my knowledge and experience.
+                        I like to study and learn something new. I like to read books, do physical education, listen to
+                        music of different genres. I'm fond of good cars and bikes. I lead active and healhy lifestyle.
+                        I like to work and see the results of my work.
+                    </p>
+                </article>
+
+                <article class="experience__codeexamples">
+                    <h2 class="aboutme__title">Code examples</h2>
+                    <pre>
+                    <code class="code hljs language-javascript">
+function addTogether() {
+    const [a, b] = arguments;
+    if (typeof a !== 'number') {
+        return undefined;
+    }
+    if (b === undefined) {
+        return (b) => addTogether(a, b);
+    }
+    if (typeof b !== 'number') {
+        return undefined;
+        return a + b;
+    }
+}
+console.log(addTogether(2)(3));                    
+                    </code>
+                </article>
+                <h2 class="aboutme__title">Portfolio</h2>
+                <div class="experience__items">
+                    <article class="experience__card">
+                        <a href="https://rolling-scopes-school.github.io/prizma-ru-JSFEPRESCHOOL/museum/"
+                            target="_blank" rel="noopener"><img class="card__img" src="./img/portfolio-1.jpg"
+                                alt="Louvre Museum replica Website" width="365" height="300">
+                            <h3 class="item__titel">Louvre Museum replica Website</h3>
+                        </a>
+                    </article>
+                    <article class="experience__card">
+                        <a href="https://github.com/prizma-ru/the-bakery-website/" target="_blank" rel="noopener"><img
+                                class="card__img" src="./img/portfolio-2.jpg" alt="the-bakery-website" width="365"
+                                height="300">
+                            <h3 class="item__titel">the-bakery-website</h3>
+                        </a>
+                    </article>
+                    <article class="experience__card">
+                        <a href="https://github.com/prizma-ru/manage-landing-page-master" target="_blank"
+                            rel="noopener"><img class="card__img" src="./img/portfolio-7.jpg" alt="Manage landing page"
+                                width="365" height="300">
+                            <h3 class="item__titel">Manage landing page</h3>
+                        </a>
+                    </article>
+                    <article class="experience__card">
+                        <a href=" https://prizma-ru.github.io/fylo_dark_theme_landing_page/" target="_blank"
+                            rel="noopener"><img class="card__img" src="./img/portfolio-4.jpg" alt="Fylo landing page"
+                                width="365" height="300">
+                            <h3 class="item__titel">Fylo landing page</h3>
+                        </a>
+                    </article>
+                    <article class="experience__card">
+                        <a href="https://github.com/prizma-ru/focal-resume-theme/" target="_blank" rel="noopener"><img
+                                class="card__img" src="./img/portfolio-5.jpg" alt="focal-resume-theme" width="365"
+                                height="300">
+                            <h3 class="item__titel">focal-resume-theme</h3>
+                        </a>
+                    </article>
+                    <article class="experience__card">
+                        <a href="https://prizma-ru.github.io/rsschool-cv/" target="_blank" rel="noopener"><img
+                                class="card__img" src="./img/portfolio-6.jpg" alt="CV#3. CV. Cross-Check" width="365"
+                                height="300">
+                            <h3 class="item__titel">CV#3. CV. Cross-Check</h3>
+                        </a>
+                    </article>
+                </div>
+            </section>
+        </div>
+
+    </div>
+</main>
+<footer class="footer">
+    <div class="container">
+        <div class="footer_social">
+            <div class="social__icon">
+                <a class="icon__rsschool" href="https://rs.school/js-stage0/" target="_blank"><img
+                        src="img/rs_school_js.svg" alt="rss school" width="80" height="80"></a>
+                <a class="icon__github" href="https://github.com/prizma-ru" target="_blank"><img src="img/github.svg"
+                        alt="Logo GitHub" width="50" height="50"></a>
+            </div>
+            <div>
+                <h3><time datetime="2021">© 2022, Prizma</time></h3>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="https://www.facebook.com/" class="square" target="_blank"><i
+                                class="fab fa-facebook-square"></i></a>
+                    </li>
+                    <li><a href="https://twitter.com/" class="square" target="_blank"><i
+                                class="fab fa-twitter-square"></i></a></li>
+                    <li><a href="https://plus.google.com/" class="square" target="_blank"> <i
+                                class="fab fa-google-plus-square"></i></a></li>
+                    <li><a href="https://www.pinterest.pt/" class="square" target="_blank"><i
+                                class="fab fa-pinterest-square"></i></a></li>
+                    <li><a href="https://dribbble.com/" class="square" target="_blank"><i
+                                class="fab fa-dribbble-square"></i></a></li>
+                    <li><a href="https://www.linkedin.com/" class="square" target="_blank"><i
+                                class="fab fa-linkedin"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</footer>
+
 <body>
 </body>
+
 </html>
