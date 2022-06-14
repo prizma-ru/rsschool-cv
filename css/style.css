@@ -219,6 +219,7 @@ html {
 .main__flex {
     display: flex;
     justify-content: space-between;
+    column-gap: 30px;
 }
 
 .aboutme {
@@ -229,6 +230,66 @@ html {
 .experience {
     width: 65%;
     padding: 15px;
+}
+
+.education__position {
+    color: #ffffff;
+    font-family: "Raleway";
+    font-size: 22px;
+    font-weight: 500;
+    text-align: left;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    padding-bottom: 15px;
+}
+
+.education__company {
+    padding-left: 10px;
+    opacity: 0.8;
+    color: #ffffff;
+    font-family: "Raleway";
+    font-size: 20px;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: normal;
+    text-align: left;
+    line-height: normal;
+}
+
+.education__data {
+    display: block;
+    color: #fb6470;
+    font-family: "Raleway";
+    font-size: 18px;
+    font-weight: 400;
+    text-align: left;
+    text-transform: uppercase;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    /* padding-bottom: 15px; */
+}
+
+.education__text {
+    display: block;
+    color: #ffffff;
+    font-family: "Raleway";
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 27.62px;
+    text-align: left;
+    line-height: normal;
+}
+
+/* .education__item.right p.education__text {
+    padding-right: 0px;
+} */
+.education__item{
+    padding: 10px;
+    border-bottom: 2px solid #e5e5e53b;
 }
 
 /*--------------------aboutme__card--------------------*/
