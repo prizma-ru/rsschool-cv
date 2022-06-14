@@ -22,11 +22,13 @@
             <nav class="header__nav">
                 <ul class="header__nav-element">
                     <li><a href="#about-id" class="nav__link ">About Me</a></li>
+                    <li><a href="#contact-id" class="nav__link ">Contact me</a></li>
                     <li><a href="#skills-id" class="nav__link ">My Skills</a></li>
-                    <li><a href="#experience-id" class="nav__link ">Work Experience</a></li>
+                    <li><a href="#languages-id" class="nav__link ">Languages</a></li>
                     <li><a href="#education-id" class="nav__link ">Education</a></li>
-                    <li><a href="#portfolio-id" class="nav__link ">Portfolio</a></li>
+                    <li><a href="#experience-id" class="nav__link ">Work Experience</a></li>
                     <li><a href="#code-id" class="nav__link ">Code examples</a></li>
+                    <li><a href="#portfolio-id" class="nav__link ">Portfolio</a></li>
                 </ul>
             </nav>
         </div>
@@ -40,7 +42,7 @@
                 <div class="aboutme__photo">
                     <img src="./img/photo.jpg" alt="me photo">
                 </div>
-                <h2 class="aboutme__title">Contact me</h2>
+                <h2 class="aboutme__title" id="contact-id">Contact me</h2>
                 <div class="aboutme__card">
                     <ul class="aboutme__param">
                         <li>Name :</li>
@@ -53,7 +55,7 @@
                     </ul>
                     <ul class="aboutme__param">
                         <li>Dmitry Glotov</li>
-                        <li>43 Years</li>
+                        <li>45 Years</li>
                         <li>dmitry.glotov@gmail.com</li>
                         <li>+7 985 XXX XX XX</li>
                         <li>Moscow, Russia</li>
@@ -61,42 +63,63 @@
                         <li><a href="https://github.com/prizma-ru" target="_blank">GitHub</a></li>
                     </ul>
                 </div>
-                <h2 class="myskills__title">My Skills</h2>
+                <h2 class="aboutme__title" id="skills-id">My Skills</h2>
                 <div class="myskills__flex">
-
                     <ul class="myskills__card">
-                        <li class="myskills_skill skill__size-1">HTML <span class="size">25%</span>
-                            <div class="circle__red-1"></div>
+                        <li class="myskills">
+                            <h4 class="myskill__title">HTML</h4>
+                            <p class="myskill__size">50%</p>
+                            <div class="myskill__diagramma html__size"></div>
                         </li>
-                        <li class="myskills_skill skill__size-1">CSS <span class="size">25%</span>
-                            <div class="circle__red-2"></div>
+                        <li class="myskills">
+                            <h4 class="myskill__title">CSS3</h4>
+                            <p class="myskill__size">40%</p>
+                            <div class="myskill__diagramma css__size"></div>
                         </li>
-                        <li class="myskills_skill skill__size-1">SQL<span class="size">50%</span>
-                            <div class="circle__red-3"></div>
+                        <li class="myskills">
+                            <h4 class="myskill__title">JAVASCRIPT</h4>
+                            <p class="myskill__size">35%</p>
+                            <div class="myskill__diagramma js__size"></div>
+                        </li>
+                        <li class="myskills">
+                            <h4 class="myskill__title">React</h4>
+                            <p class="myskill__size">10%</p>
+                            <div class="myskill__diagramma react__size"></div>
+                        </li>
+                        <li class="myskills">
+                            <h4 class="myskill__title">GitHub</h4>
+                            <p class="myskill__size">70%</p>
+                            <div class="myskill__diagramma git__size"></div>
+                        </li>
+
+                        <li class="myskills">
+                            <h4 class="myskill__title">FIGMA</h4>
+                            <p class="myskill__size">80%</p>
+                            <div class="myskill__diagramma figma__size"></div>
+                        </li>
+                        <li class="myskills">
+                            <h4 class="myskill__title">Photoshop</h4>
+                            <p class="myskill__size">80%</p>
+                            <div class="myskill__diagramma ps__size"></div>
                         </li>
                     </ul>
-                    <ul class="myskills__card">
-                        <li class="myskills_skill skill__size-2">Photoshop, Figma<span class="size">50%</span>
-                            <div class="circle__red-4"></div>
+                </div>
+                <h2 class="aboutme__title" id="languages-id">Languages</h2>
+                <div class="languages__items">
+                    <ul class="languages__skill">
+                        <li class="languages eng">
+                            <h4>English level:</h4>
+                            <span>A2 Elementary</span>
                         </li>
-                        <li class="myskills_skill skill__size-2">GIT<span class="size">25%</span>
-                            <div class="circle__red-5"></div>
+                        <li class="languages rus">
+                            <h4>Russian level:</h4>
+                            <span>Native</span>
                         </li>
-                        <li class="myskills_skill skill__size-2">Jira, Confluence<span class="size">96%</span>
-                            <div class="circle__red-6"></div>
+                        <li class="languages ukr">
+                            <h4>Ukrainian level:</h4>
+                            <span>Intermediate</span>
                         </li>
-                    </ul>
 
-                    <ul class="myskills__card">
-                        <li class="myskills_skill skill__size-3">Agile, Scrum, Kanban<span class="size">90%</span>
-                            <div class="circle__red-7"></div>
-                        </li>
-                        <li class="myskills_skill skill__size-3">Soft skills<span class="size">90%</span>
-                            <div class="circle__red-8"></div>
-                        </li>
-                        <li class="myskills_skill skill__size-3">English level: A1<span class="size">20%</span>
-                            <div class="circle__red-9"></div>
-                        </li>
                     </ul>
                 </div>
             </article>
@@ -104,55 +127,81 @@
                 <article class="experience__aboutme">
                     <h1 class="header__title">Dmitry Glotov</h1>
                     <p class="header__text">#Junior Frontend Developer</p>
-                    <h2 class="aboutme__title">About Me</h2>
+                    <h2 class="aboutme__title" id="about-id">About Me</h2>
                     <p class="aboutme__text">I want to study Frontend development to expand my knowledge and experience.
                         I like to study and learn something new. I like to read books, do physical education, listen to
                         music of different genres. I'm fond of good cars and bikes. I lead active and healhy lifestyle.
                         I like to work and see the results of my work.
                     </p>
                 </article>
-
-
                 <article class="education__items">
-                    <h2 class="aboutme__title">Education</h2>
+                    <h2 class="aboutme__title" id="education-id">Education</h2>
                     <div class="education__item">
-                        <h3 class="education__position">Course<span class="education__company">@Rolling Scopes School</span>
+                        <h3 class="title__position">Course<span class="education__company">@Rolling Scopes
+                                School</span>
                         </h3>
                         <p class="education__text">JavaScript Development</p>
-                        <p class="education__data">May 2021 - Jun 2021</p>
+                        <p class="education__data">May 2022 - Sep 2022</p>
                     </div>
                     <div class="education__item">
-                        <h3 class="education__position">Course<span class="education__company">@freeCodeCamp</span>
+                        <h3 class="title__position">Course<span class="education__company">@freeCodeCamp</span>
                         </h3>
                         <p class="education__text">Responsive Web Design</p>
                         <p class="education__data">May 2021 - Jun 2021</p>
                     </div>
                     <div class="education__item">
-                        <h3 class="education__position">Course<span class="education__company">@freeCodeCamp</span>
+                        <h3 class="title__position">Course<span class="education__company">@freeCodeCamp</span>
                         </h3>
                         <p class="education__text">JavaScript Algorithms and Data Structures</p>
                         <p class="education__data">May 2021 - Jun 2021</p>
                     </div>
                     <div class="education__item">
-                        <h3 class="education__position">Course<span class="education__company">@Tomsk State
+                        <h3 class="title__position">Course<span class="education__company">@Tomsk State
                                 University</span></h3>
                         <p class="education__text">Agile and Scrum in working on projects and products</p>
                         <p class="education__data">Jul 2020 - Aug 2020</p>
                     </div>
                     <div class="education__item">
-                        <h3 class="education__position">Engineer<span class="education__company">@Orel State
+                        <h3 class="title__position">Engineer<span class="education__company">@Orel State
                                 Technical
                                 University</span></h3>
                         <p class="education__text">Design engineers-technologists for microelectronics and design
                             automation of computing</p>
                         <p class="education__data">Sep 1997 - Aug 2004</p>
-
+                    </div>
+                </article>
+                <h2 class="aboutme__title"  id="experience-id">Work Experience</h2>
+                <article class="work__items">
+                    <div class="work__item">
+                        <h3 class="title__position">Stream Delivery Manager<span class="work__company">@VTB Bank</span>
+                        </h3>
+                        <p class="work__text">I organize the work of the team to develop four products</p>
+                        <p class="work__data">Nov 2020 - now</p>
+                    </div>
+                    <div class="work__item">
+                        <h3 class="title__position">Service delivery manager<span
+                                class="work__company">@CoreClass</span></h3>
+                        <p class="work__text">Product development and implementation</p>
+                        <p class="work__data">Oct 2012 - Nov 2020</p>
+                    </div>
+                    <div class="work__item">
+                        <h3 class="title__position">Project Manager<span class="work__company">@OJSC Mobile
+                                TeleSystems</span></h3>
+                        <p class="work__text">Head of the Project SS7 Monitoring System</p>
+                        <p class="work__data">Aug 2004 - Oct 2005</p>
+                    </div>
+                    <div class="work__item">
+                        <h3 class="title__position">Director of OSS/BSS<span class="work__company">@Rostelecom</span>
+                        </h3>
+                        <p class="work__text">Development of OSS/BSS solutions</p>
+                        <p class="work__data">Nov 2005 - Oct 2012</p>
                     </div>
                 </article>
 
-                <article class="experience__codeexamples">
-                    <h2 class="aboutme__title">Code examples</h2>
-                    <pre>
+        </div>
+        <article class="experience__codeexamples">
+            <h2 class="aboutme__title" id="code-id">Code examples</h2>
+            <pre>
                     <code class="code hljs language-javascript">
 function addTogether() {
     const [a, b] = arguments;
@@ -170,54 +219,50 @@ function addTogether() {
 console.log(addTogether(2)(3));                    
                     </code>
                 </pre>
-                </article>
-                <h2 class="aboutme__title">Portfolio</h2>
-                <div class="experience__items">
-                    <article class="experience__card">
-                        <a href="https://rolling-scopes-school.github.io/prizma-ru-JSFEPRESCHOOL/museum/"
-                            target="_blank" rel="noopener"><img class="card__img" src="./img/portfolio-1.jpg"
-                                alt="Louvre Museum replica Website" width="365" height="300">
-                            <h3 class="item__titel">Louvre Museum replica Website</h3>
-                        </a>
-                    </article>
-                    <article class="experience__card">
-                        <a href="https://github.com/prizma-ru/the-bakery-website/" target="_blank" rel="noopener"><img
-                                class="card__img" src="./img/portfolio-2.jpg" alt="the-bakery-website" width="365"
-                                height="300">
-                            <h3 class="item__titel">the-bakery-website</h3>
-                        </a>
-                    </article>
-                    <article class="experience__card">
-                        <a href="https://rolling-scopes-school.github.io/prizma-ru-JSFEPRESCHOOL/portfolio/" target="_blank"
-                            rel="noopener"><img class="card__img" src="./img/portfolio-7.jpg" alt="Manage landing page"
-                                width="365" height="300">
-                            <h3 class="item__titel">Manage landing page</h3>
-                        </a>
-                    </article>
-                    <article class="experience__card">
-                        <a href=" https://prizma-ru.github.io/fylo_dark_theme_landing_page/" target="_blank"
-                            rel="noopener"><img class="card__img" src="./img/portfolio-4.jpg" alt="Fylo landing page"
-                                width="365" height="300">
-                            <h3 class="item__titel">Fylo landing page</h3>
-                        </a>
-                    </article>
-                    <article class="experience__card">
-                        <a href="https://github.com/prizma-ru/focal-resume-theme/" target="_blank" rel="noopener"><img
-                                class="card__img" src="./img/portfolio-5.jpg" alt="focal-resume-theme" width="365"
-                                height="300">
-                            <h3 class="item__titel">focal-resume-theme</h3>
-                        </a>
-                    </article>
-                    <article class="experience__card">
-                        <a href="https://prizma-ru.github.io/rsschool-cv/" target="_blank" rel="noopener"><img
-                                class="card__img" src="./img/portfolio-6.jpg" alt="CV#3. CV. Cross-Check" width="365"
-                                height="300">
-                            <h3 class="item__titel">CV#3. CV. Cross-Check</h3>
-                        </a>
-                    </article>
-                </div>
-            </section>
+        </article>
+        <h2 class="aboutme__title" id="portfolio-id">Portfolio</h2>
+        <div class="experience__items">
+            <article class="experience__card">
+                <a href="https://rolling-scopes-school.github.io/prizma-ru-JSFEPRESCHOOL/museum/" target="_blank"
+                    rel="noopener"><img class="card__img" src="./img/portfolio-1.jpg"
+                        alt="Louvre Museum replica Website" width="365" height="300">
+                    <h3 class="item__titel">Louvre Museum replica Website</h3>
+                </a>
+            </article>
+            <article class="experience__card">
+                <a href="https://github.com/prizma-ru/the-bakery-website/" target="_blank" rel="noopener"><img
+                        class="card__img" src="./img/portfolio-2.jpg" alt="the-bakery-website" width="365" height="300">
+                    <h3 class="item__titel">the-bakery-website</h3>
+                </a>
+            </article>
+            <article class="experience__card">
+                <a href="https://rolling-scopes-school.github.io/prizma-ru-JSFEPRESCHOOL/portfolio/" target="_blank"
+                    rel="noopener"><img class="card__img" src="./img/portfolio-7.jpg" alt="Manage landing page"
+                        width="365" height="300">
+                    <h3 class="item__titel">Manage landing page</h3>
+                </a>
+            </article>
+            <article class="experience__card">
+                <a href=" https://prizma-ru.github.io/fylo_dark_theme_landing_page/" target="_blank" rel="noopener"><img
+                        class="card__img" src="./img/portfolio-4.jpg" alt="Fylo landing page" width="365" height="300">
+                    <h3 class="item__titel">Fylo landing page</h3>
+                </a>
+            </article>
+            <article class="experience__card">
+                <a href="https://github.com/prizma-ru/focal-resume-theme/" target="_blank" rel="noopener"><img
+                        class="card__img" src="./img/portfolio-5.jpg" alt="focal-resume-theme" width="365" height="300">
+                    <h3 class="item__titel">focal-resume-theme</h3>
+                </a>
+            </article>
+            <article class="experience__card">
+                <a href="https://prizma-ru.github.io/rsschool-cv/" target="_blank" rel="noopener"><img class="card__img"
+                        src="./img/portfolio-8.jpg" alt="CV#3. CV. Cross-Check" width="365" height="300">
+                    <h3 class="item__titel">CV#3. CV. Cross-Check</h3>
+                </a>
+            </article>
         </div>
+        </section>
+    </div>
     </div>
 </main>
 <footer class="footer">
@@ -226,7 +271,7 @@ console.log(addTogether(2)(3));
             <div class="social__icon">
                 <a class="icon__rsschool" href="https://rs.school/js-stage0/" target="_blank"><img
                         src="img/rs_school_js.svg" alt="rss school" width="80" height="80"></a>
-                <a class="icon__github" href="https://github.com/prizma-ru" target="_blank"><img src="img/github.svg"
+                <a class="icon__github" href="https://github.com/prizma-ru" target="_blank"><img src="img/svg/github.svg"
                         alt="Logo GitHub" width="50" height="50"></a>
             </div>
             <div>
@@ -239,8 +284,6 @@ console.log(addTogether(2)(3));
                     </li>
                     <li><a href="https://twitter.com/" class="square" target="_blank"><i
                                 class="fab fa-twitter-square"></i></a></li>
-                    <li><a href="https://plus.google.com/" class="square" target="_blank"> <i
-                                class="fab fa-google-plus-square"></i></a></li>
                     <li><a href="https://www.pinterest.pt/" class="square" target="_blank"><i
                                 class="fab fa-pinterest-square"></i></a></li>
                     <li><a href="https://dribbble.com/" class="square" target="_blank"><i
