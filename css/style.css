@@ -1,0 +1,531 @@
+/*### Primary*/
+
+:root {
+    --bg-dark: #000000;
+    --dark-red: #fb6470;
+    --color-gold: #bdae82;
+    --color-white: #ffffff;
+    --font1: 40px;
+    --font2: 32px;
+}
+
+/*Обнуление*/
+*, *:before, *:after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    /* color: var(--font-white); */
+    /* color: var(--color-white); */
+    box-sizing: border-box;
+
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-white);
+    display: block;
+    transition: 0.5s;
+}
+
+a:hover {
+    color: var(--color-gold);
+}
+
+svg:not([fill]):not([stroke]) {
+    /* теперь вообще не нужно стилизовать SVG и каждый раз прописывать свойство border-color */
+    fill: currentColor;
+}
+
+/*Обнуление*/
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    background-color: var(--bg-dark);
+    font-family: "Raleway", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: normal;
+    color: var(--color-white);
+    position: relative;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 1240px;
+    /*ширина блока*/
+    max-width: 100%;
+    /*максимальный размер 1440пх*/
+    margin: 0 auto;
+    /*выровниваем по центру*/
+    padding: 0 20px;
+
+}
+
+.aboutme__title {
+    position: relative;
+    color: #3e3e3e;
+    font-size: 32px;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    /* padding-bottom: 50px; */
+    margin-bottom: 20px;
+    padding: 30px 0;
+}
+
+.aboutme__title:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    display: block;
+    /* margin: 0 auto -5px; */
+    width: 40%;
+    height: 2px;
+    background-color: var(--dark-red);
+}
+
+/*--------------------header--------------------*/
+
+/* .header {
+    background-color: var(--color-white);
+    background-color: #1d1d24;
+    padding: 25px 0;
+} */
+
+.header__flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header__nav {
+    padding: 20px;
+    height: 100px;
+}
+
+.header__nav-element {
+    display: flex;
+    justify-content: space-between;
+    color: var(--color-white);
+}
+
+.header__nav-element li {
+    padding: 20px;
+    font-size: 18px;
+
+}
+
+.nav__link:hover {
+    color: var(--dark-red);
+    font-size: 20px;
+}
+
+
+.header__title {
+    font-family: "Raleway";
+    font-size: 48px;
+    font-weight: 600;
+    font-style: normal;
+    text-align: center;
+    padding: 30px 0;
+
+}
+
+.header__text {
+    font-family: "Raleway";
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+
+.header__title:after {
+    content: "";
+    display: block;
+    margin: 0 auto -5px;
+    width: 327px;
+    height: 2px;
+    background-color: var(--dark-red);
+}
+
+.header__title:before {
+    content: "";
+    content: "";
+    display: block;
+    margin: 0 auto -5px;
+    width: 327px;
+    height: 2px;
+    background-color: var(--dark-red);
+}
+
+/*--------------------header--------------------*/
+/*--------------------aboutme--------------------*/
+.aboutme__photo img {
+    display: block;
+    width: 100%;
+}
+
+.languages {
+    /* list-style-image: url(../img/svg/ru.svg); */
+    position: relative;
+    padding-left: 25px;
+    padding-bottom: 20px;
+}
+
+.languages::before {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-size: 16px 16px;
+    left: 0px;
+    top: 5px;
+}
+
+.languages span {
+    font-size: 16px;
+    color: var(--dark-red);
+}
+
+.languages.eng::before {
+    background-image: url('../img/svg/gb.svg');
+}
+
+.languages.rus::before {
+    background-image: url('../img/svg/ru.svg');
+}
+
+.languages.ukr::before {
+    background-image: url('../img/svg/ua.svg');
+}
+
+/*--------------------aboutme--------------------*/
+/*--------------------myskills__flex--------------------*/
+.myskills {
+    /* display: flex; */
+    padding-left: 50px;
+}
+
+.myskill__title {
+    padding-top: 15px;
+}
+
+.myskill__size {
+    font-size: 16px;
+    color: var(--dark-red);
+}
+
+.myskill__diagramma {
+    position: relative;
+    height: 6px;
+    max-width: 100%;
+    background-color: var(--color-white);
+    margin-top: 10px;
+}
+
+.myskill__diagramma::after {
+    position: absolute;
+    content: "";
+    display: block;
+    height: 6px;
+    background-color: var(--dark-red);
+    z-index: 1
+}
+
+.myskill__diagramma::before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: -50px;
+    top: -55px;
+    background-size: 30px;
+    background-repeat: no-repeat;
+}
+
+
+
+
+.html__size::after {
+    width: 50%;
+}
+.html__size::before {
+    background-image: url('../img/svg/html.svg');
+}
+.css__size::after {
+    width: 40%;
+}
+.css__size::before {
+    background-image: url('../img/svg/css.svg');
+}
+.js__size::after {
+    width: 35%;
+}
+.js__size::before {
+    background-image: url('../img/svg/javascript.svg');
+}
+.react__size::after {
+    width: 10%;
+}
+.react__size::before {
+    background-image: url('../img/svg/react-2.svg');
+}
+.git__size::after {
+    width: 70%;
+}
+.git__size::before {
+    background-image: url('../img/svg/github.svg');
+}
+.figma__size::after {
+    width: 80%;
+}
+.figma__size::before {
+    background-image: url('../img/svg/figma.svg');
+}
+.ps__size::after {
+    width: 80%;
+}
+.ps__size::before {
+    background-image: url('../img/svg/photoshop-cc-6.svg');
+}
+
+
+/*--------------------myskills__flex--------------------*/
+
+
+/*--------------------aboutme__card--------------------*/
+.aboutme__card {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.aboutme__param {
+    /* color: #3e3e3e; */
+    width: 100%;
+    font-size: 16px;
+    text-align: left;
+    font-family: "Raleway";
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+
+}
+
+.aboutme__param:nth-child(1) {
+    padding-right: 30px;
+}
+
+.aboutme__card li {
+    padding: 10px 0;
+    /* list-style-type: none; */
+}
+
+.aboutme__param li {
+    border-bottom: 2px solid #e5e5e53b;
+    /* list-style-type: none; */
+}
+
+.main__flex {
+    display: flex;
+    justify-content: space-between;
+    /* column-gap: 30px; */
+}
+
+.aboutme {
+    width: 32%;
+    padding: 15px;
+}
+
+.experience {
+    width: 65%;
+    padding: 15px;
+}
+
+.title__position {
+    /* color: var(--color-white); */
+    font-family: "Raleway";
+    font-size: 22px;
+    font-weight: 500;
+    text-align: left;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    padding-bottom: 15px;
+}
+
+.education__company,
+.work__company {
+    padding-left: 10px;
+    opacity: 0.8;
+    color: #8d8d8d;
+    font-family: "Raleway";
+    font-size: 20px;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: normal;
+    text-align: left;
+    line-height: normal;
+}
+
+.education__data,
+.work__data {
+    display: block;
+    color: var(--dark-red);
+    font-family: "Raleway";
+    font-size: 18px;
+    font-weight: 400;
+    text-align: left;
+    text-transform: uppercase;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    /* padding-bottom: 15px; */
+}
+
+.education__text,
+.work__text {
+    display: block;
+    color: var(--color-white);
+    font-family: "Raleway";
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 27.62px;
+    text-align: left;
+    line-height: normal;
+}
+
+/* .education__item.right p.education__text {
+    padding-right: 0px;
+} */
+.education__item,
+.work__item {
+    padding: 10px;
+    border-bottom: 2px solid #e5e5e53b;
+}
+
+/*--------------------aboutme__card--------------------*/
+/*--------------------experience__aboutme--------------------*/
+.code.hljs {
+    font-size: 16px;
+    margin: 0 40px;
+    padding: 0 20px;
+}
+
+.aboutme__text {
+    text-align: justify;
+    /* Техт по ширине*/
+    text-indent: 30px;
+    /*CSS: Отступ текста*/
+}
+
+.experience__items {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    /*минимальное растояние между flex элементами*/
+    justify-content: space-between;
+}
+
+.experience__card {
+    height: 100%;
+    padding: 15px 0;
+    cursor: pointer;
+    transition: 0.8s;
+}
+
+.card__img {
+    padding-bottom: 25px;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    transition: 0.8s;
+}
+
+.experience__card:hover .card__img {
+    /* scale: 2 0.7; */
+    transform: scale(1.07);
+}
+
+.experience__card:hover .item__titel {
+    /* scale: 2 0.7; */
+    color: var(--dark-red);
+}
+
+.item__titel {
+    /* position: relative; */
+    /* margin-bottom: 21px; */
+    color: var(--color-white);
+    transition: color .5s;
+    text-align: center;
+
+}
+
+/*--------------------experience__aboutme--------------------*/
+/*--------------------footer--------------------*/
+.footer {
+    /* background-color: var(--color-white); */
+    background-color: #1d1d24;
+    padding: 25px 0;
+}
+
+.social__icon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon__rsschool {
+    padding-right: 20px;
+}
+
+.icon__github {
+    padding-left: 20px;
+}
+
+.footer_social {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer_social ul {
+    display: flex;
+    align-items: center;
+}
+
+.footer_social ul li {
+    list-style-type: none;
+    margin: 0 10px;
+}
+
+.fab {
+    color: var(--color-white);
+    font-size: 35px;
+    transition: 0.8s;
+}
+
+.fab:hover {
+    font-size: 38px;
+    color: var(--dark-red);
+}
+
+/*--------------------footer--------------------*/
